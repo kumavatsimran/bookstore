@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+    <style>
+     .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 5px;
+}
+.book{
+  font-style:italic;
+  align-items: center;
+ margin-left: 17px;
+ margin-bottom: 0;
+}
+.name{
+  font-style: oblique;
+  text-align: center;
+}
+.logo {
+  height: 50px;
+  margin: 10px;
+}
+.button{
+background-color: #ca1384;
+
+margin: 20px;
+border: none;
+}
+body{
+  background: linear-gradient(90deg, rgba(186, 236, 240, 0.824) 0%, rgba(253, 29, 231, 0.507) 50%, rgba(69,242,252,0.8323704481792717) 100%);}
+nav a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+    </style>
+<body>
+  <header class="rounded-4 rounded-top-0 header">
+    <div class="">
+      <h6 class="book">BOOK</h6>
+    <h5 class="name">~TOWN~</h5></div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/form">form</a>
+      <a href="#">edit</a>
+    </nav>
+  </header>
+  <div class="container">
+    <P class="fs-4 mb-2  m-4">Find the boook</P>
+    <h4 class="ms-4">you've been looking for</h4>
+    <div class="d-flex">
+      <input placeholder=" serach your book" class=" h-100 m-4 w-75 p-2 rounded-2 border">
+      <button class=" text-white  button rounded-3 ps-3 pe-3"  >Serach</button>
+    </div>
+  </div>
+  <div class=" mb-5 bg-white p-2">
+    <form action="/insertData" method="post" class="bg-white border w-50 m-auto p-3  rounded-3">
+
+          <caption><h2>Add Book</h2></caption>
+        
+              <label class="form-check-label" >image</label>
+            <input type="text" class="form-control" name="image" id="image">
+          
+        
+              <label class="form-check-label">name</label>
+            <input type="text" class="form-control" name="name">
+          
+        
+              <label class="form-check-label">price</label>
+            <input type="number" class="form-control" name="price">
+          
+        
+              <label class="form-check-label">Genre</label>
+            
+                  <select name="Genre">
+                      <option value="">--Select Genre--</option>
+                      <option value="fiction">Fiction</option>
+                      <option value="nonfiction">Non-Fiction</option>
+                      <option value="fantasy">Fantasy</option>
+                      <option value="mystery">Mystery</option>
+                      <option value="romance">Romance</option>
+                      <option value="thriller">Thriller</option>
+                      <option value="science">Science</option>
+                      <option value="biography">Biography</option>
+                      <option value="selfhelp">Self-Help</option>
+                  </select>
+              
+          
+
+      <input type="submit" value="submit" class="btn button ">
+  </form>      
+  </div>
+  <!--==================== FOOTER ====================-->
+<footer class="footer fixed-bottom">
+  <div class="row  ">
+     <div class="div"><span>your books</span></div>
+     <div class="div"> <span class="footer__copy">
+      &#169; All Rights Reserved By
+      <a href="#">Name.</a>
+    </span></div>  
+      </div>
+    </footer>
+   
+   
+ 
+ 
+    
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
